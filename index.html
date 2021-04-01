@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>FilmQuest</title>
+</head>
+
+<body id="body">
+    <div class="logosearch">
+        <img src="assets/logo.png" alt="Film Quest logo">
+        <div class="Search">
+            <input id="movieTxt" type="text">
+            <i id="submit" class="fas fa-search"></i>
+        </div>
+    </div>
+
+    <div id="moviebox">
+        <div class="moviePoster">
+            <img id="movPoster" alt="">
+        </div>
+
+        <div class="movie-info">
+            <div class="titleandrun">
+                <h1 id="title"></h1>
+                <div class="runtime">
+                    <i id="time" class="fas fa-stopwatch"></i>
+                    <h2 id="runtime"></h2>
+                </div>
+            </div>
+            <div class="info">
+                <p id="plot"></p>
+                <p id="actors"></p>
+                <p id="released"></p>
+                <p id="genre"></p>
+                <p id="director"></p>
+                <p id="writer"></p>
+                <p id="rating"></p>
+            </div>
+            <h1 id="critics">Critics Reviews</h1>
+            <div class="ratings">
+                <div class="rotTom">
+                    <img id="firstIMG" src="assets/tomatometer.png" alt="Rotten Tomatoes Score">
+                    <p id="rotTomScore"></p>
+                </div>
+                <div class="moveData">
+                    <img src="assets/metascore.png" alt="Metacritic Score">
+                    <p id="metaScore"></p>
+                </div>
+                <div class="imdb">
+                    <img src="assets/imdb.png" alt="">
+                    <p id="imdbScore"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="infoFrom">Information provided by OMDb (Open Movie Database)</p>
+    <span></span>
+</body>
+<script src="js/main.js"></script>
+
+</html>

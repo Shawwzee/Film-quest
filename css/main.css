@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(233, 233, 233);
+    width: 80vw;
+    margin: auto;
+    min-width: 900px;
+}
+.logosearch {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+.logosearch img {
+    height: 75px;
+}
+.Search {
+    position: relative;
+    width: 320px;
+    margin: auto 0;
+}
+#movieTxt {
+    position: relative;
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 8px;
+    font-size: 18px;
+}
+#submit {
+    position: absolute;
+    font-size: 24px;
+    color: black;
+    opacity: 0.5;
+    top: 8px;
+    right: -15px;
+    cursor: pointer;
+}
+#submit:hover {
+    opacity: 1;
+}
+#moviebox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgb(206, 206, 206);
+    opacity: 0;
+    width: 100%;
+}
+.moviePoster {
+    width: 21%;
+    min-width: 320px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+#movPoster {
+    border: none;
+    border-radius: 5px;
+    z-index: 100;
+}
+.movie-info {
+    width: 79%;
+    padding: 20px;
+    min-width: 500px;
+}
+#title {
+    font-size: 36px;
+}
+.titleandrun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.runtime {
+    margin: auto 0px;
+    display: flex;
+    flex-direction: row;
+}
+#time {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.info {
+    background-color: rgb(216, 216, 216);
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#actors,
+#released,
+#genre,
+#director,
+#rating,
+#writer {
+    margin-top: 8px;
+}
+#crossIcon {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 34px;
+    cursor: pointer;
+    z-index: 101;
+}
+.ratings {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+    min-width: 500px;
+}
+.ratings img {
+    width: 2.8vw;
+    margin-left: 50px;
+    min-width: 20px;
+}
+#firstIMG {
+    margin-left: 0;
+}
+.rotTom,
+.moveData,
+.imdb {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+.ratings p {
+    font-size: 2.5vw;
+    margin: auto 0;
+    margin-left: 10px;
+}
+#critics {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 3.1vw;
+    transition-duration: 0.5s;
+}
+#infoFrom {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+}
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+}
+@media only screen and (min-width: 1300px) {
+    #critics {
+       font-size: 40px;
+       text-align: center;
+    }
+    .ratings img {
+        margin-left: 100px;
+    }
+    .ratings p {
+        font-size: 32px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+
+  }
